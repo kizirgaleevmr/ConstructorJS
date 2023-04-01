@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пример 18 - Календарь</title>
+  </head>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    label {
+      cursor: pointer;
+      font-size: 20px;
+      color: #777;
+    }
+    .block {
+      margin-top: 20px;
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid #ccc;
+      background: #eee;
+      padding: 10px;
+      transition: 0.3s;
+    }
+    #check_label:checked ~ .block {
+      height: 0px;
+      opacity: 0;
+    }
+    #check_label {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="primer">
+      <label for="check_label">Спойлер</label>
+      <input type="checkbox" id="check_label" name="spoiler" />
+      <div class="block">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+        animi consequuntur sapiente ducimus harum assumenda nostrum eos atque
+        nesciunt? Repellat saepe modi soluta perspiciatis in optio non
+        doloremque. Voluptatum, facere?
+      </div>
+    </div>
+    <script src="func.js"></script>
+  </body>
+</html>
