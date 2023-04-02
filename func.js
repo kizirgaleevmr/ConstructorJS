@@ -23,3 +23,5 @@ if (startGame) {
 let count = userCard.reduce((acc, el) => (acc += +el), 0);
 
 console.log(count);
+console.log(count);
+console.log(count);
